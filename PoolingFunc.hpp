@@ -12,7 +12,7 @@
 using namespace std;
 using namespace cv;
 
-Mat AveragePooling(Mat && img_, int && step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+Mat AveragePooling(Mat && img_, int && step_ = 2, const int & border_type_ = BORDER_REFLECT){
 	if(step_ > img_.cols|| step_ > img_.rows){
 		return Mat::zeros(512,512,CV_8UC3);
 	}
@@ -38,7 +38,7 @@ Mat AveragePooling(Mat && img_, int && step_ = 2, const int & border_type_ = BOR
 	}
 	return new_img_;
 }
-Mat AveragePooling(const Mat & img_, int && step_ = 2 , const int & border_type_ = BORDER_REFLECT_101){
+Mat AveragePooling(const Mat & img_, int && step_ = 2 , const int & border_type_ = BORDER_REFLECT){
 	if(step_ > img_.cols|| step_ > img_.rows){
 		return Mat::zeros(512,512,CV_8UC3);
 	}
@@ -65,7 +65,7 @@ Mat AveragePooling(const Mat & img_, int && step_ = 2 , const int & border_type_
 	}
 	return new_img_;
 }
-Mat MaxPooling(const Mat & img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+Mat MaxPooling(const Mat & img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT){
 	if(step_ > img_.cols|| step_ > img_.rows){
 		return Mat::zeros(512,512,CV_8UC3);
 	}
@@ -92,7 +92,7 @@ Mat MaxPooling(const Mat & img_, const int & step_ = 2, const int & border_type_
 	}
 	return new_img_;
 }
-Mat MaxPooling(Mat && img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+Mat MaxPooling(Mat && img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT){
 	if(step_ > img_.cols|| step_ > img_.rows){
 		return Mat::zeros(512,512,CV_8UC3);
 	}

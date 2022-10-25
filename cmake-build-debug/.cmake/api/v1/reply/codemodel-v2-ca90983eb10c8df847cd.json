@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/atri/c++projects/MyOpencvFunc/cmake-build-debug",
-		"source" : "/home/atri/c++projects/MyOpencvFunc"
+		"build" : "/home/atri/c++projects/my-opencv-func/cmake-build-debug",
+		"source" : "/home/atri/c++projects/my-opencv-func"
 	},
 	"version" : 
 	{

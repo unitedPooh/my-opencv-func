@@ -1,4 +1,4 @@
-# Install script for directory: /home/atri/c++projects/MyOpencvFunc
+# Install script for directory: /home/atri/c++projects/my-opencv-func
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/atri/c++projects/MyOpencvFunc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/atri/c++projects/my-opencv-func/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
