@@ -119,4 +119,5 @@ Mat MaxPooling(Mat && img_, const int & step_ = 2, const int & border_type_ = BO
 	return new_img_;
 }
 
+
 #endif
