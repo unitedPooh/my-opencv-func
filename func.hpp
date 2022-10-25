@@ -13,6 +13,9 @@ using namespace std;
 using namespace cv;
 
 Mat AveragePooling(Mat && img_, int && step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+	if(step_ > img_.cols|| step_ > img_.rows){
+		return Mat::zeros(512,512,CV_8UC3);
+	}
 	cv::copyMakeBorder(img_,img_,0,step_ - (img_.rows % step_),0,step_ - (img_.cols % step_),border_type_,3);
 	int width_ = img_.cols;
 	int height_ = img_.rows;
@@ -36,6 +39,9 @@ Mat AveragePooling(Mat && img_, int && step_ = 2, const int & border_type_ = BOR
 	return new_img_;
 }
 Mat AveragePooling(const Mat & img_, int && step_ = 2 , const int & border_type_ = BORDER_REFLECT_101){
+	if(step_ > img_.cols|| step_ > img_.rows){
+		return Mat::zeros(512,512,CV_8UC3);
+	}
 	Mat copy_img_;
 	cv::copyMakeBorder(img_,copy_img_,0,step_ - (img_.rows % step_),0,step_ - (img_.cols % step_),border_type_,3);
 	int width_ = copy_img_.cols;
@@ -60,6 +66,9 @@ Mat AveragePooling(const Mat & img_, int && step_ = 2 , const int & border_type_
 	return new_img_;
 }
 Mat MaxPooling(const Mat & img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+	if(step_ > img_.cols|| step_ > img_.rows){
+		return Mat::zeros(512,512,CV_8UC3);
+	}
 	Mat copy_img_;
 	cv::copyMakeBorder(img_,copy_img_,0,step_ - (img_.rows % step_),0,step_ - (img_.cols % step_),border_type_,3);
 	int width_ = copy_img_.cols;
@@ -84,6 +93,9 @@ Mat MaxPooling(const Mat & img_, const int & step_ = 2, const int & border_type_
 	return new_img_;
 }
 Mat MaxPooling(Mat && img_, const int & step_ = 2, const int & border_type_ = BORDER_REFLECT_101){
+	if(step_ > img_.cols|| step_ > img_.rows){
+		return Mat::zeros(512,512,CV_8UC3);
+	}
 	cv::copyMakeBorder(img_,img_,0,step_ - (img_.rows % step_),0,step_ - (img_.cols % step_),border_type_,3);
 	int width_ = img_.cols;
 	int height_ = img_.rows;
