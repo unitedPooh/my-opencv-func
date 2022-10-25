@@ -1,0 +1,4 @@
+/home/atri/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/atri/clion/bin/ninja/linux/ninja -G Ninja -S /home/atri/c++projects/MyOpencvFunc -B /home/atri/c++projects/MyOpencvFunc/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/atri/c++projects/MyOpencvFunc/cmake-build-debug
